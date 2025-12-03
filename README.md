@@ -72,7 +72,8 @@ Completed as part of **COMP11108 – Data Analysis & Visualisation (UWS)**.
 - **Interactive Tableau Dashboard**: [Link](https://public.tableau.com/views/Global_AirQualityindex/Dashboard1)  
 - **Raw Dataset (Kaggle)**: [Link](https://www.kaggle.com/datasets/coffxc12/global-air-quality-2023-messy-from-waqi786)  
 - **Cleaned Dataset (Google Drive)**: [Link](https://drive.google.com/file/d/1J_VxKwlcuyDlx70Kr_dcLW8CrxLa3Umt/view)  
-- **Coursework Report (PDF)**: (Add link once uploaded)  
+- **Coursework Report (PDF)**: [A6 (1).docx](https://github.com/user-attachments/files/23907461/A6.1.docx)
+  
 
 ---
 
