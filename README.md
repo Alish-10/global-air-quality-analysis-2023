@@ -1,158 +1,111 @@
-🌍 Global Air Quality Analysis – 2023
-Python (Google Colab) • Tableau • Data Cleaning • EDA • Dashboard
+# 🌍 Global Air Quality Analysis – 2023
 
-This project analyses the Global Air Quality 2023 dataset to uncover global pollution patterns, seasonal trends, weather–pollution relationships, and city-level disparities.
-It includes data loading, cleaning, feature engineering, statistical exploration, and a fully interactive Tableau dashboard.
+**Python (Google Colab) • Tableau • Data Cleaning • EDA • Dashboard**
 
-Completed as part of COMP11108 – Data Analysis & Visualisation (UWS).
+This project analyses the Global Air Quality 2023 dataset to uncover global pollution patterns, seasonal trends, weather–pollution relationships, and city-level disparities. It covers the full data analysis workflow: data loading, cleaning, feature engineering, exploratory analysis, and a fully interactive Tableau dashboard.  
 
+Completed as part of **COMP11108 – Data Analysis & Visualisation (UWS)**.
 
-🔎 Project Overview
+---
 
-The dataset contains 30,450+ daily pollution observations recorded across major global cities throughout 2023.
-This project explores:
+## **Dataset**
 
-🌫 PM2.5 seasonal & monthly trends
+- **Global Air Quality 2023**: Contains 30,450+ daily pollution observations recorded across major global cities throughout 2023.  
+- Key variables include: PM2.5, PM10, CO, NO2, O3, temperature, humidity, wind speed, city, and date.
 
-🏙 Global pollution hotspots
+---
 
-🌦 Weather relationships (temperature, wind, humidity)
+## **Project Objectives**
 
-🏭 City-level distributions & rankings
+- Analyze **PM2.5 seasonal and monthly trends**  
+- Identify **global pollution hotspots**  
+- Explore **weather–pollution relationships** (temperature, wind, humidity)  
+- Examine **city-level disparities and rankings**  
+- Assess **geographical inequalities in air quality**  
+- Categorize pollution levels for public health insights  
 
-🌍 Geographical inequalities in air quality
+---
 
-📊 Pollution category analysis
+## **Workflow Summary**
 
+### **1️⃣ Data Loading & Audit**
+- Imported raw Kaggle dataset  
+- Reviewed data structure, completeness, and inconsistencies  
+- Identified missing values and formatting issues  
 
+### **2️⃣ Data Cleaning & Feature Engineering**
+- Standardized city name formatting  
+- Converted date fields and corrected invalid entries  
+- Removed duplicate city–date records  
+- Applied hierarchical imputation (City–Month → City mean)  
+- Engineered analytical fields: Year, Month, YearMonth, PM2.5 category (Good → Very Unhealthy), Composite Pollution Index (z-score based)  
 
-🛠️ Workflow Summary
+### **3️⃣ Exploratory Data Analysis (EDA)**
+- Summary statistics and distributions  
+- Monthly pollution trends  
+- Correlation analysis between pollutants and weather variables  
+- City ranking by PM2.5  
+- Visualizations: heatmaps, boxplots, scatter plots, choropleths  
 
-1️⃣ Data Loading & Audit
+### **4️⃣ Tableau Dashboard**
+- **KPI Cards**: average PM2.5, max PM2.5, unhealthy days  
+- **Pollution Hotspot Map**: global visualization of city pollution levels  
+- **City–Month Heatmap**: monthly trends per city  
+- **PM2.5 vs Weather Scatter Plots**: temperature, wind, humidity  
+- Seasonal trend lines and top 10 most polluted cities  
+- Fully interactive filters (city, country, month)  
 
-Imported raw Kaggle dataset
+---
 
-Reviewed structure, completeness, and inconsistencies
+## **Key Insights**
 
-Identified missing values and formatting issues
+1. **Seasonal Variation**: PM2.5 peaks during winter months (Jan–Mar) due to temperature inversion.  
+2. **Geographic Inequality**: Highest pollution: Beijing, Mumbai, Johannesburg, Dubai | Cleanest: London, Sydney, Berlin  
+3. **Meteorological Influence**: Higher temperature and wind speed correlate with lower PM2.5 levels  
+4. **Right-Skewed Distribution**: Many cities experience extreme pollution spikes → high health-risk days  
 
+---
 
-2️⃣ Data Cleaning & Feature Engineering
+## **Project Links**
 
-Standardised city name formatting
+- **Google Colab Notebook (EDA + Cleaning)**: [Link](https://colab.research.google.com/drive/19HIYpk9msYK64HNTGiqBCnyRY3qNXHzd)  
+- **Interactive Tableau Dashboard**: [Link](https://public.tableau.com/views/Global_AirQualityindex/Dashboard1)  
+- **Raw Dataset (Kaggle)**: [Link](https://www.kaggle.com/datasets/coffxc12/global-air-quality-2023-messy-from-waqi786)  
+- **Cleaned Dataset (Google Drive)**: [Link](https://drive.google.com/file/d/1J_VxKwlcuyDlx70Kr_dcLW8CrxLa3Umt/view)  
+- **Coursework Report (PDF)**: (Add link once uploaded)  
 
-Converted date fields and corrected invalid entries
+---
 
-Removed duplicate city–date records
+## **Team Contributions**
 
-Applied hierarchical imputation (City–Month → City mean)
+| Member  | Contribution |
+|---------|-------------|
+| Alish   | Data selection, initial EDA, final report compilation |
+| Rajeev  | Data cleaning, missing value handling, descriptive statistics |
+| Amit    | Python visualizations |
+| Sanjay  | Tableau dashboard development |
+| Sajan   | Data storytelling, reflection, documentation |
 
-Engineered new analytical fields:
+---
 
-Year, Month, YearMonth
+## **Technologies & Tools**
 
-PM2.5 category (Good → Very Unhealthy)
+- **Python**: pandas, numpy, seaborn, matplotlib, scipy  
+- **Google Colab**: for coding and analysis  
+- **Tableau Public**: for interactive dashboards  
+- Feature engineering, data cleaning, EDA, visualization, storytelling  
 
-Composite Pollution Index (z-score based)
+---
 
+## **Project Summary**
 
-3️⃣ Exploratory Data Analysis (EDA)
+This project demonstrates the **full data analysis lifecycle**:  
 
-Summary statistics and distributions
+**Raw messy dataset → Cleaned structured data → EDA → Insights → Interactive Dashboard**  
 
-Monthly pollution trends
-
-Correlation analysis (pollutants vs weather)
-
-City ranking by PM2.5
-
-Heatmaps, boxplots, scatter plots, choropleths
-
-
-4️⃣ Tableau Dashboard
-
-The interactive dashboard includes:
-
-KPI Cards: avg PM2.5, max PM2.5, unhealthy days
-
-Pollution hotspot world map
-
-City–Month heatmap
-
-PM2.5 vs Temperature/Wind scatter plots
-
-Seasonal trend lines
-
-Top 10 most polluted cities
-
-Fully interactive filters (city, country, month)
-
-
-
-📈 Key Insights
-🌡 1. Seasonal Variation
-
-PM2.5 peaks during winter months (Jan–Mar) due to temperature inversion.
-
-🌍 2. Geographic Inequality
-
-Highest pollution: Beijing, Mumbai, Johannesburg, Dubai
-Cleanest: London, Sydney, Berlin
-
-🌬 3. Meteorological Influence
-
-Higher temperature and wind speed correlate with lower PM2.5 levels.
-
-📉 4. Right-Skewed Distribution
-
-Many cities show extreme pollution spikes → high health-risk days.
-
-
-🔗 Project Links
-
-📓 Google Colab Notebook (EDA + Cleaning)	https://colab.research.google.com/drive/19HIYpk9msYK64HNTGiqBCnyRY3qNXHzd
-
-📊 Interactive Tableau Dashboard	https://public.tableau.com/views/Global_AirQualityindex/Dashboard1
-
-🗂 Raw Dataset (Kaggle)	https://www.kaggle.com/datasets/coffxc12/global-air-quality-2023-messy-from-waqi786
-
-🧼 Cleaned Dataset (Google Drive)	https://drive.google.com/file/d/1J_VxKwlcuyDlx70Kr_dcLW8CrxLa3Umt/view
-
-📄 Coursework Report (PDF)	(Add link here once uploaded)
-
-👥 Team Contributions (Group Project)
-Member	Contribution
-Alish	Data selection, initial EDA, final report compilation
-Rajeev	Data cleaning, missing value handling, descriptive statistics
-Amit	Python visualisations
-Sanjay	Tableau dashboard development
-Sajan	Data storytelling, reflection, documentation
-
-🧰 Technologies & Tools
-
-Python (pandas, numpy, seaborn, matplotlib, scipy)
-
-Google Colab
-
-Tableau Public
-
-Feature engineering, EDA, data cleaning, storytelling
-
-
-🎯 Project Summary
-
-This project demonstrates the complete data analysis lifecycle:
-
-Raw messy dataset → cleaned structured data → EDA → insights → interactive dashboard
-
-It showcases strong skills in:
-
-Data cleaning & preprocessing
-
-Exploratory data analysis
-
-Visualisation & dashboard design
-
-Interpreting environmental datasets
-
-Communicating insights clearly
+It highlights strong skills in:  
+- Data cleaning & preprocessing  
+- Exploratory data analysis  
+- Visualization & dashboard design  
+- Interpreting environmental datasets  
+- Communicating insights effectively  
